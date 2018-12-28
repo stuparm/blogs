@@ -7,7 +7,7 @@ And, because of that, the animated image below shows the result of this blog pos
 
 <p align="center"><img src="./resources/gif/ex-2.gif" /></p>
 
-*More **visual** examples at the end of the blog.*
+*More **visual** examples at the end of the blog. Click [here](#more-examples).* 
 
 ### Introduction and Prerequisites
 
@@ -451,6 +451,8 @@ Here, the replacement of **#point_\*** string does the trick. I will focus only 
 </table>
 
 As you can see, every new arrival on input port creates new ```<polyline>``` html object and just append it to the previously created chain of ```<polyline>``` objects. With this technique, if someone is just looking at the screen, he will see only the difference or newly arrived value.
+
+---
 
 ### More Examples
 
