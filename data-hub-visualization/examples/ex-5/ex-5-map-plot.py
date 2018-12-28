@@ -10,7 +10,7 @@ chart_color = "#DC143C"             # point chart color. blue = 2E86C1 , yellow 
 chart_height = 652                  # height of the chart in pixels 
 chart_width = 975                   # width of the chart in pixel
 graph_name = "Map - Munich"         # title/graph name
-map_url="https://raw.githubusercontent.com/stuparmihailo/blogs/dev/city-map.png"    #url with location of the map
+map_url="https://raw.githubusercontent.com/stuparmihailo/blogs/master/data-hub-visualization/examples/ex-5/ex-5-map.png"    #url with location of the map
 # -------------------------------------------------------------------------------------------
 
 # INTERNAL CONFIGURATION - CHANGE ONLY IF YOU KNOW WHAT ARE YOU DOING
