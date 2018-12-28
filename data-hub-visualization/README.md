@@ -5,7 +5,6 @@ I would change the well-known phrase and say:
 
 And, because of that, the animated image below shows the result of this blog post. Later we will go into prerequisites and steps needed to achieve it.
 
-![Example 2](./resources/gif/ex-2.gif)
 <p align="center"><img src="./resources/gif/ex-2.gif" /></p>
 
 *More **visual** examples at the end of the blog.*
@@ -22,7 +21,7 @@ I personally use **developer edition** and run Data Hub as a docker container on
 
 I find Data Hub as a great tool to orchestrate and manage especially IoT sensor data. When it comes to IoT data. I am more/less focused on one goal with this tool: to extract the meaningful information. For that purpose, I usually create operators (Javascript, Python, …) that enrich or filter raw data. In this whole process I have to debug my pipeline and for that I usually use well known **Terminal** operator.
 
-![Terminal](./resources/gif/terminal.gif)
+<p align="center"><img src="./resources/gif/terminal.gif" /></p>
 
 Unfortunately, **Terminal** is not so user friendly and it is not always easy to find specific “line” or specific “value”. If I want to monitor single or multiple sensor values, it would be impossible with this console view.
 
@@ -32,7 +31,7 @@ For me, the ideal replacement for **Terminal** operator would be something that 
 
 But where to find the details about **HTML Viewer**? If you go to Data Hub Modeler and search for **HTML Viewer**, you will see the description:
 
-![step-0](./resources/steps/step-0.png)
+<p align="center"><img src="./resources/steps/step-0.png" /></p>
 
 Here, I would like to highlight the comment which says that ```script``` tags will be ignored. It means that we are not able to generate some Javascript code as part of HTML because this operator will just ignore it.
 
@@ -51,14 +50,15 @@ First we will create two **Data Generator** operators. They will simulate the st
 2) Search for keyword **Generator**. Operators are automatically filtered and probably the first one is **Data Generator**
 3) Drag and drop the operator to the white space on your diagram
 4) Repeat the step 3. Your diagram should be as in image below. We need two generators because we will have two values (sensors) in our chart display.
-![step-1](./resources/steps/step-1.png)
+
+<p align="center"><img src="./resources/steps/step-1.png" /></p>
 
 #### 2 - Data Generator Code
 
 1) Left click on first component to show the options. They are visible on the right side of component
 2) Click on the first one, which will open the **script** in new tab (Data Hub tab, not browser tab)
 
-![step-2](./resources/steps/step-2.png)
+<p align="center"><img src="./resources/steps/step-2.png" /></p>
 
 3) Replace the generated code with the content:
 
@@ -104,17 +104,19 @@ The key point is that newly generated HTML will be just update of the previously
 1) Type **Python3** in search bar to find the required operator *It is important that you choose Python3 and not Python2. Code example that we will use works with Python3.*
 2) Drag and drop **Python3Operator** to the white space
 3) Place it just right to the previously created **Data Generator**s
-![step-3](./resources/steps/step-3.png)
+
+<p align="center"><img src="./resources/steps/step-4.png" /></p>
 
 Next, create two input ports and connect them with **Data Generator**s:
 
 4) Left click on newly created operator and you will see the options on the right
 5) Choose the second option: **Add Port**
-![step-4](./resources/steps/step-4.png)
+
+<p align="center"><img src="./resources/steps/step-5.png" /></p>
 
 New window will be displayed. Populate it as in the image bellow. Click **OK**.
 
-![step-5](./resources/steps/step-5.png)
+<p align="center"><img src="./resources/steps/step-6.png" /></p>
 
 Now, you have created new **input** port on **Python3Operator**. Create two more ports (one input and output) with the following attributes:
 
@@ -131,7 +133,7 @@ Now, you have created new **input** port on **Python3Operator**. Create two more
 
 Your operator should look like in the image below.
 
-![step-6](./resources/steps/step-6.png)
+<p align="center"><img src="./resources/steps/step-7.png" /></p>
 
 Now, when input and output ports are created, we will add the logic (python code) inside operator. Left click on your operator and choose the first option: **Script**. New tab will be opened with commented python code. You can delete everything from this code editor and replace with the code bellow. I know, it is long, but you could only be focused on the first section called **Configuration**.
 
@@ -332,7 +334,7 @@ html = html.replace("#y_labels", create_y_labels_html(num_y_labels))
 
 The last operator in your pipeline is **HTML Viewer**. Find it in operator list and drag and drop next to the **Python3Operator**. Then, connect the blocks to get the pipeline like in the image below.
 
-![step-8](./resources/steps/step-8.png)
+<p align="center"><img src="./resources/steps/step-8.png" /></p>
 
 Your pipeline is ready, and you can save it by clicking the save button: ![step-9](./resources/steps/step-9.png) New window will open and you should populate it with details:
 
@@ -340,20 +342,20 @@ Your pipeline is ready, and you can save it by clicking the save button: ![step-
 - Description: [choose description – example: **My Chart Pipeline**]
 - Category: [leave empty]
 
-![step-10](./resources/steps/step-10.png)
+<p align="center"><img src="./resources/steps/step-10.png" /></p>
 
 Finally, click the start button ![step-11](./resources/steps/step-11.png) and your pipeline (my-chart-pipeline) will start. Now you can open your chart though **HTML Viewer** operator:
 
 1) Left click on HTML Viewer operator to display the options on the right
 2) Choose the first one Open UI
 
-![step-12](./resources/steps/step-12.png)
+<p align="center"><img src="./resources/steps/step-12.png" /></p>
 
 That’s it! We have reached our goal!
 
 The chart should look like the one from the start of this blog:
 
-![Example 2](./resources/gif/ex-2.gif)
+<p align="center"><img src="./resources/gif/ex-2.gif" /></p>
 
 ---
 
@@ -463,6 +465,8 @@ More examples with descriptions can be found on my github: https://github.com/st
 :---|:---:
 ![ex-3](./resources/gif/ex-3.gif)  | ![ex-4](./resources/gif/ex-4.gif) 
 
+
 |Map:|
 :---|
 | ![ex-5](./resources/gif/ex-5.gif)  |
+
