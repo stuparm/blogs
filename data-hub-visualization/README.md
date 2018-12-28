@@ -6,6 +6,7 @@ I would change the well-known phrase and say:
 And, because of that, the animated image below shows the result of this blog post. Later we will go into prerequisites and steps needed to achieve it.
 
 ![Example 2](./resources/gif/ex-2.gif)
+<img aligment="center" src="./resources/gif/ex-2.gif" />
 
 *More **visual** examples at the end of the blog.*
 
