@@ -11,7 +11,13 @@ This folder contains five examples that can be separated into three categories:
     - [Example 5 - Map Visualization](#Example-5---Map-Visualization)
 
 ---
----
+
+Explanation of each example follows the format.
+1) Result (animated image)
+2) Description
+3) Pipeline
+4) Code Examples
+5) Appendix (Optional)
 
 #### Example 1 - Single Line Chart
  
